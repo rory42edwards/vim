@@ -1,0 +1,7 @@
+set number	" enable line numbers
+syntax on	" enable syntax highlighting
+set autoindent	" enable autoindentation of code
+set showcmd	" show last command in bottom bar
+set showmatch	" highlight matching parentheses
+set incsearch	" search as characters are entered
+set hlsearch	" highlight matches
