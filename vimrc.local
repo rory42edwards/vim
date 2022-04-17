@@ -7,6 +7,12 @@ set shiftwidth=4 " set shift width to 4 spaces
 set tabstop=4   " set tab width to 4 spaces
 set expandtab   " use space characters instead of tabs
 
+" split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " search options
 set hlsearch    " highlight matches
 set incsearch   " incrementally highlight matching characters as you type while searching
@@ -22,7 +28,8 @@ call vundle#begin()
 "alternatively, pass a path where vundle should install plugins, call vundle#begin('~/some/path/here')
 "let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-"add all plugins here
-"all plugins must be added before the following line
+Plugin 'scrooloose/nerdtree' " file tree
+""Plugin 'scroolosse/syntastic' " this one doesn't seem to be working atm
+Plugin 'Valloric/YouCompleteMe' " autocompletion
 call vundle#end()
 filetype plugin indent on
